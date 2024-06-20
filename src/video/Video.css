@@ -1,0 +1,61 @@
+.videoMemories {
+    height: 300px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contVideo {
+    margin-top: -50px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contVideo > .video {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.contVideo > .video > .arrows {
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.img1 {
+    background: url("./1.jpg");
+    width: 250px;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.img1:hover {
+    background: url("./1\ \(4\).jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img2 {
+    background: url("./2.jpg");
+    width: 250px;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.img2:hover {
+    background: url('./1\ \(12\).jpg');
+    background-size: cover;
+    background-position: center;
+}

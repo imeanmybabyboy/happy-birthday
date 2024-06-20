@@ -1,0 +1,58 @@
+.carousel-container {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-container:hover .carousel-image {
+    transform: scale(1.05);
+}
+
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 0.3s;
+}
+
+.carousel-image.visible {
+    opacity: 1;
+}
+
+.carousel-image.fade {
+    opacity: 0;
+}
+
+.together {
+    position: absolute;
+    border-radius: 10px;
+    color: #fff;
+    height: fit-content;
+    width: fit-content;
+    z-index: 2;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    font-size: 20px;
+}
+
+.together::before {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+    content: '';
+    position: absolute;
+    z-index: -1;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}

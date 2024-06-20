@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.cont {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: #000000;
+}
+
+.cont::before {
+    content: "";
+    position: absolute;
+    background: url("../public/backgroundImage/background.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.cont > .header > .main {
+    font-size: 25px;
+    color: #fff;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.music {
+    font-family: monospace;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #00000085;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    user-select: none;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.music:hover {
+    color: rgb(255, 139, 139);
+}
+
+.music:active {
+    color: rgb(255, 50, 50);
+}
+
+.prevMusic {
+    width: 75px;
+    height: 75px;
+    background: url("../public/imgMusic/prev-button.png");
+    background-size: contain;
+    cursor: pointer;
+    transition: 0.1s;
+    user-select: none;
+}
+
+.prevMusic:hover {
+    background: url("../public/imgMusic/prev-button-hover.png");
+    background-size: contain;
+}
+
+.prevMusic:active {
+    background: url("../public/imgMusic/prev-button-active.png");
+    background-size: contain;
+}
+
+.nextMusic {
+    width: 75px;
+    height: 75px;
+    background: url("../public/imgMusic/next-button.png");
+    background-size: contain;
+    cursor: pointer;
+    transition: 0.1s;
+    user-select: none;
+    right: 0;
+}
+
+.nextMusic:hover {
+    background: url("../public/imgMusic/next-button-hover.png");
+    background-size: contain;
+}
+
+.nextMusic:active {
+    background: url("../public/imgMusic/next-button-active.png");
+    background-size: contain;
+}
+
+.musicControl > .playStop {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.musicControl {
+    display: flex;
+    position: absolute;
+    right: 150px;
+    top: 50px;
+    align-items: center;
+}
+
+.musicControl > .playStop > .play {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.stop {
+    width: fit-content;
+    margin: auto;
+}
+
+.start {
+    margin: auto;
+}
+
+.prevMusic,
+.nextMusic {
+    position: absolute;
+}
+
+.memoriesUs {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    transition: 0.3s;
+}
+
+.fadeTrans {
+    transition: 0.3s;
+}
+
+.usVideo {
+    height: 300px;
+    width: 400px;
+}
+
+.home {
+    text-decoration: none;
+    font-family: monospace;
+    cursor: pointer;
+    background-color: #00000085;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    user-select: none;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.home:hover {
+    color: rgb(255, 139, 139);
+}
+
+.home:active {
+    color: rgb(255, 50, 50);
+}
+
+.volumeUp {
+    background: url('../public/imgVolume/volumeUp.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    user-select: none;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.volumeDown {
+    background: url('../public/imgVolume/volumeLow.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    user-select: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.volumeUp:hover {
+    background: url('../public/imgVolume/volumeUpHover.png');
+    background-size: contain;
+}
+
+.volumeDown:hover {
+    background: url('../public/imgVolume/volumeLowHover.png');
+    background-size: contain;
+}
+
+.volumeUp:active {
+    background: url('../public/imgVolume/volumeUpClicked.png');
+    background-size: contain;
+}
+
+.volumeDown:active {
+    background: url('../public/imgVolume/volumeLowClicked.png');
+    background-size: contain;
+}
